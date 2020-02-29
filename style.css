@@ -1,0 +1,316 @@
+*
+{
+  margin:0;
+  padding:0;
+}
+
+header
+{
+    background-image:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)), url(./images/Alola.jpg);
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-nav
+{
+  float:right;
+  list-style: none;
+  margin-top: 30px;
+}
+
+.main-nav li
+{
+    display: inline-block;
+}
+
+.main-nav li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15x;
+}
+
+.main-nav li.activeHome a
+{
+  border: 1px solid white;
+}
+
+.main-nav li a:hover
+{
+  border: 1px solid white;
+}
+
+.logo img
+{
+  width: 250px;
+  height: auto;
+}
+
+body
+{
+  font-family: monospace;
+  background-image:
+  linear-gradient(rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)), url(./images/Alola.jpg);
+  background-repeat: repeat-y;
+  height:100vh;
+}
+
+.row
+{
+  max-width: 1200px;
+  margin: auto;
+}
+
+.welcome
+{
+   position: absolute;
+   width: 1275px;
+   margin-left: 0px;
+   margin-right: 0px:
+}
+
+h1
+{
+  color: white;
+  text-transform: uppercase;
+  font-size: 70px;
+  text-align: center;
+  margin-top: 275px;
+}
+
+.button
+{
+  margin-top: 30px;
+  margin-left: 440px;
+}
+
+.btn
+{
+  border: 1px solid white;
+  padding: 10px 30px;
+  color:  white;
+  text-decoration: none;
+  font-size: 13px;
+  text transform: uppercase;
+}
+
+.btn-one
+{
+  background-color: darkorange;
+  font-family: "Roboto", sans-serif;
+}
+
+.btn-two
+{
+  font-family: "Roboto", sans-serif;
+}
+
+.btn-two:hover
+{
+  background-color: darkorange;
+}
+
+/* FOR THE RATES */
+.table-box
+{
+    margin: 50px auto;
+}
+
+.table-row{
+    display: table;
+    width: 80%;
+    margin: 10px auto;
+    font-family: sans-serif;
+    background: white;
+    padding: 12px 0;
+    color: #555;
+    font-size: 13px;
+    box-shadow: 0 1px 4px 0px rgba(0,0,50,0.3);
+}
+.table-head{
+    background: #FF8C00;
+    box-shadow: none;
+    color: #fff;
+    font-weight: 600;
+}
+.table-head .table-cell{
+    border-right: none;
+}
+.table-cell{
+    display: table-cell;
+    width: 20%;
+    text-align: center;
+    padding: 4px 0;
+    border-right: 1px solid #d6d4d4;
+    vertical-align: middle;
+}
+.first-cell{
+    text-align: left;
+    padding-left: 10px;
+}
+.last-cell{
+    border-right: none;
+}
+a
+{
+    text-decoration: none;
+    color: #555;
+}
+
+@media only screen and (max-width: 600px) {
+  .table-row {
+    font-size: 11px;
+  }
+}
+
+iframe
+{
+margin-top: 10px;
+margin-bottom: 50px;
+-moz-border-radius: 12px;
+-webkit-border-radius: 12px;
+border-radius: 12px;
+-moz-box-shadow: 4px 4px 14px #000;
+-webkit-box-shadow: 4px 4px 14px #000;
+box-shadow: 4px 4px 14px #000;
+}
+
+/* SA EXPLORE */
+.box
+{
+  color: black;
+  background-color: white;
+  border-radius: 25px;
+  padding: 20px;
+  width: 1200px;
+  height: 5500px;
+  border-style: groove;
+  opacity: 0.9;
+}
+
+.faq
+{
+  font-size: 20px;
+}
+
+.img
+{
+  display: flex;
+  justify-content: center;
+}
+
+/* SA SIGHTS NA HO TO */
+.sightbox
+{
+  color: black;
+  background-color: white;
+  border-radius: 25px;
+  padding: 20px;
+  width: 1200px;
+  height: 6000px;
+  border-style: groove;
+  opacity: 0.9;
+}
+
+/* CONTACT */
+.contact-info
+{
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+
+.card{
+  background: #2f3542;
+  padding: 0 20px;
+  margin: 0 10px;
+  width: calc(33% - 20px);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.card-icon{
+  font-size: 28px;
+  background: #FF8C00;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px !important;
+  border-radius: 50%;
+  transition: 0.3s linear;
+}
+
+.card:hover .card-icon{
+  background: none;
+  color: #FF8C00;
+  transform: scale(1.6);
+}
+
+.card p{
+  margin-top: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  max-height: 0;
+  opacity: 0;
+  transition: 0.3s linear;
+}
+
+.card:hover p{
+  max-height: 40px;
+  opacity: 1;
+}
+
+
+@media screen and (max-width:800px) {
+  .contact-info{
+    flex-direction: column;
+  }
+  .card{
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+  }
+}
+
+.button2
+{
+  margin-top: 30px;
+  margin-left: 550px;
+}
+
+.otherbutton
+{
+  background-color: darkorange;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid white;
+  padding: 10px 30px;
+  color:  white;
+  text-decoration: none;
+  font-size: 13px;
+  text transform: uppercase;
+  }
+
+.secondbox
+{
+  color: black;
+  background-color: white;
+  border-radius: 25px;
+  padding: 20px;
+  width: 1200px;
+  height: 1200px;
+  border-style: groove;
+  opacity: 0.9;
+}
